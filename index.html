@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-by-Step Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>Your journey to excellence starts here. We provide top-notch solutions to elevate your business.</p>
+            <button class="button" onclick="scrollToContact()">Contact Us Now</button>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>We are a team of dedicated professionals committed to delivering innovative solutions.</p>
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+            <ul>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>Digital Marketing</li>
+                <li>IT Consulting</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Have questions? Reach out to us for more information!</p>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <button class="button" type="button" id="nextToEmail">Next</button>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button class="button" type="button" id="nextToMessage">Next</button>
+
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button class="button" type="submit">Send Message</button>
+
+                <div class="success-message" id="successMessage">Thank you! Your message has been sent.</div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
